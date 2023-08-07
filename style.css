@@ -1,0 +1,51 @@
+
+body {
+    height: 90vh;
+    background-color: black;
+}
+
+#circle{
+    display: flex;
+    width: 20vw;
+    height: 20vw;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 100%;
+    align-items: center;
+    position: relative;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.pointer {
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    right: 10vw;
+    width: 50%;
+    transform-origin: 100%;
+    transition: all 0.5ms;
+    transform: rotate(90deg);
+    transition-timing-function: cubic-bezier(0.1,2.7,0.58,1);
+}
+
+
+#seconds{
+    /* transform: rotate(10deg); */
+    width: 40%;
+    background-color: red;
+}
+#minutes{
+    /* transform: rotate(100deg); */
+    width: 30%;
+}
+#hours{
+    /* transform: rotate(50deg); */
+    width: 20%;
+}
